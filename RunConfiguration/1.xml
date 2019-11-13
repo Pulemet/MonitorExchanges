@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<CustomViewRunConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <InputParams><experiments><experiment><HistoryNode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>PortfolioExecutor</Name><TypeName>PortfolioExecutor</TypeName><Kind>Invalid</Kind><Children><HistoryNode><Name>SendMailParameters</Name><TypeName>MailSenderParameters</TypeName><Kind>Field</Kind><Children><HistoryNode><Name>Enabled</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>Host</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string">fw.orientsoft.by</Value></HistoryNode><HistoryNode><Name>Port</Name><TypeName>System.Int32</TypeName><Kind>Field</Kind><Value xsi:type="xsd:int">25</Value></HistoryNode><HistoryNode><Name>UserName</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string">reshetnikov</Value></HistoryNode><HistoryNode><Name>Password</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string">HWAvv5p#</Value></HistoryNode><HistoryNode><Name>Domain</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string"></Value></HistoryNode><HistoryNode><Name>EnableSsl</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">false</Value></HistoryNode><HistoryNode><Name>MaxIdleTime</Name><TypeName>System.Int32</TypeName><Kind>Field</Kind><Value xsi:type="xsd:int">10000</Value></HistoryNode><HistoryNode><Name>From</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string">tms@r8fin.com</Value></HistoryNode><HistoryNode><Name>To</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string">Igor.Pliatnev@orientsoft.by</Value></HistoryNode><HistoryNode><Name>CC</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string"></Value></HistoryNode><HistoryNode><Name>BCC</Name><TypeName>System.String</TypeName><Kind>Field</Kind><Value xsi:type="xsd:string"></Value></HistoryNode><HistoryNode><Name>MaxAttempts</Name><TypeName>System.Int32</TypeName><Kind>Field</Kind><Value xsi:type="xsd:int">5</Value></HistoryNode><HistoryNode><Name>ResendInterval</Name><TypeName>System.Int32</TypeName><Kind>Field</Kind><Value xsi:type="xsd:int">1</Value></HistoryNode></Children></HistoryNode><HistoryNode><Name>WaitInterval</Name><TypeName>System.Int32</TypeName><Kind>Field</Kind><Value xsi:type="xsd:int">60</Value></HistoryNode><HistoryNode><Name>ActivateDLTXMM</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateSBINANCE</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateSBITFINEX</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateGDAX</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateSGEMINI</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateSCOINBACE</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode><HistoryNode><Name>ActivateSSEEDCX</Name><TypeName>System.Boolean</TypeName><Kind>Field</Kind><Value xsi:type="xsd:boolean">true</Value></HistoryNode></Children></HistoryNode><RendererState name="PortfolioExecutor" kind="Invalid" type="PortfolioExecutor"><ChildRenderers><RendererState name="SendMailParameters" kind="Field" type="MailSenderParameters"><attributes><attribute name="expanded">True</attribute></attributes><ChildRenderers><RendererState name="SendMailParameters" kind="Field" type="MailSenderParameters"><attributes><attribute name="Credentials">True</attribute><attribute name="Mail">True</attribute><attribute name="SMTP Client">True</attribute><attribute name="SMTP Server">True</attribute></attributes></RendererState></ChildRenderers></RendererState><RendererState name="WaitInterval" kind="Field" type="System.Int32"><attributes><attribute name="IntervalsCount">0</attribute><attribute name="Max">0</attribute><attribute name="Min">0</attribute><attribute name="RangeType">Simple</attribute><attribute name="Step">0</attribute><attribute name="Value">60</attribute><attribute name="Values"></attribute></attributes></RendererState></ChildRenderers></RendererState></experiment></experiments></InputParams>
+  <InputParamsBlotter><InputParameters><WaitInterval>60</WaitInterval><ActivateDLTXMM>true</ActivateDLTXMM><ActivateSBINANCE>true</ActivateSBINANCE><ActivateSBITFINEX>true</ActivateSBITFINEX><ActivateGDAX>true</ActivateGDAX><ActivateSGEMINI>true</ActivateSGEMINI><ActivateSCOINBACE>true</ActivateSCOINBACE><ActivateSSEEDCX>true</ActivateSSEEDCX><SendMailParameters><Enabled>true</Enabled><Host>fw.orientsoft.by</Host><Port>25</Port><UserName>reshetnikov</UserName><Password>HWAvv5p#</Password><Domain /><EnableSsl>false</EnableSsl><MaxIdleTime>10000</MaxIdleTime><From>tms@r8fin.com</From><To>Igor.Pliatnev@orientsoft.by</To><CC /><BCC /><MaxAttempts>5</MaxAttempts><ResendInterval>1</ResendInterval></SendMailParameters></InputParameters></InputParamsBlotter>
+  <InputParamsInstruments></InputParamsInstruments>
+  <InputParamsInstrumentsBlotter></InputParamsInstrumentsBlotter>
+  <Name>1</Name>
+  <StrategySetup>
+    <CustomViewDefId>48643a9e-be51-4b3c-a7c1-5394be46152d</CustomViewDefId>
+    <Debugging>false</Debugging>
+    <SelectedStartDate>2019-04-29T10:00:00</SelectedStartDate>
+    <SelectedEndDate>2019-04-29T10:10:00.001</SelectedEndDate>
+    <Symbols>
+      <string>BCHUSD</string>
+      <string>BTCUSD</string>
+      <string>ETCUSD</string>
+      <string>ETHBTC</string>
+      <string>LTCBTC</string>
+      <string>LTCUSD</string>
+      <string>XRPUSD</string>
+    </Symbols>
+    <TradingSession>
+      <Start>00:00:00</Start>
+      <End>1.00:00:00</End>
+    </TradingSession>
+    <IsTradingSessionRangeInExchangeTZ>true</IsTradingSessionRangeInExchangeTZ>
+    <BarSize>0 sec</BarSize>
+    <ChartBarSize>
+      <Size>0</Size>
+      <UOM>Second</UOM>
+    </ChartBarSize>
+    <CurrencyCode>
+      <NumericCode>999</NumericCode>
+      <Country />
+      <Name />
+      <AlphabeticCode />
+      <Sign />
+      <MinorUnit>2147483647</MinorUnit>
+    </CurrencyCode>
+    <DrawCharts>true</DrawCharts>
+    <DrawSecondaryCharts>true</DrawSecondaryCharts>
+    <VisualStyle>Candle</VisualStyle>
+    <PriceScaleMode>Linear</PriceScaleMode>
+    <UseVisualizer>false</UseVisualizer>
+    <StrategyId>00000000-0000-0000-0000-000000000000</StrategyId>
+    <DisplayName />
+    <ThreadNumber>0</ThreadNumber>
+  </StrategySetup>
+  <ChartConfig>
+    <FieldProperties />
+    <TimePeriod>
+      <Size>0</Size>
+      <UOM>Second</UOM>
+    </TimePeriod>
+    <BarSize>
+      <Size>0</Size>
+      <UOM>Second</UOM>
+    </BarSize>
+    <TickBarSize>-1</TickBarSize>
+    <VisualStyle>Candle</VisualStyle>
+    <PriceScaleMode>Linear</PriceScaleMode>
+    <AttributeDefs />
+    <BenchmarkDefs />
+    <ItemsToShow>Trade</ItemsToShow>
+    <ShowVolume>false</ShowVolume>
+    <UserRange>
+      <Start>2019-04-29T10:00:00</Start>
+      <End>2019-04-29T10:10:00</End>
+    </UserRange>
+    <CurrencyCode>
+      <NumericCode>999</NumericCode>
+      <Country />
+      <Name />
+      <AlphabeticCode />
+      <Sign />
+      <MinorUnit>2147483647</MinorUnit>
+    </CurrencyCode>
+    <StartTime>2019-04-29T10:00:00</StartTime>
+    <EndTime>2019-04-29T10:10:00.001</EndTime>
+    <TradingSession>
+      <Start>-10675199.02:48:05.4775808</Start>
+      <End>-10675199.02:48:05.4775808</End>
+    </TradingSession>
+    <HasTradingSession>false</HasTradingSession>
+    <IsTradingSessionRangeInExchangeTZ>true</IsTradingSessionRangeInExchangeTZ>
+    <CalendarOptions>
+      <Enabled>false</Enabled>
+      <Path>D:\Program Files\5.2.0\QuantOffice\Data\CalendarDB.xml</Path>
+    </CalendarOptions>
+    <WarmupOptions>
+      <Enabled>false</Enabled>
+      <BarSize>
+        <UOM>Day</UOM>
+        <Size>1</Size>
+      </BarSize>
+      <WarmupStrategy>false</WarmupStrategy>
+      <WarmupIntradayStream />
+    </WarmupOptions>
+    <Resolution>Millisecond</Resolution>
+    <CvSet>
+      <ItemsId>
+        <guid>48643a9e-be51-4b3c-a7c1-5394be46152d</guid>
+      </ItemsId>
+    </CvSet>
+    <ConnectionInfo>
+      <Main>
+        <SubscriptionId>00000000-0000-0000-0000-000000000000</SubscriptionId>
+        <StreamKey>binance-sim,bitfinex-sim,CryptoCortex,gdax,gdax-sim,gemini-sim,SEEDCX-sim</StreamKey>
+        <StreamName>binance-sim, bitfinex-sim, CryptoCortex, gdax, gdax-sim, gemini-sim, SEEDCX-sim</StreamName>
+        <AdjustmentOptions>
+          <UseSubscriptionOptions>true</UseSubscriptionOptions>
+          <CustomOptions>
+            <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+            <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+            <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+            <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+            <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+            <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+          </CustomOptions>
+        </AdjustmentOptions>
+      </Main>
+      <Daily>
+        <SubscriptionId>00000000-0000-0000-0000-000000000000</SubscriptionId>
+        <StreamKey />
+        <StreamName>Empty</StreamName>
+        <AdjustmentOptions>
+          <UseSubscriptionOptions>true</UseSubscriptionOptions>
+          <CustomOptions>
+            <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+            <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+            <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+            <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+            <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+            <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+          </CustomOptions>
+        </AdjustmentOptions>
+      </Daily>
+      <Intraday>
+        <SubscriptionId>00000000-0000-0000-0000-000000000000</SubscriptionId>
+        <StreamKey />
+        <StreamName>Empty</StreamName>
+        <AdjustmentOptions>
+          <UseSubscriptionOptions>true</UseSubscriptionOptions>
+          <CustomOptions>
+            <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+            <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+            <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+            <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+            <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+            <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+          </CustomOptions>
+        </AdjustmentOptions>
+      </Intraday>
+      <Ticks>
+        <SubscriptionId>00000000-0000-0000-0000-000000000000</SubscriptionId>
+        <StreamKey>binance-sim,bitfinex-sim,CryptoCortex,gdax,gdax-sim,gemini-sim,SEEDCX-sim</StreamKey>
+        <StreamName>binance-sim,bitfinex-sim,CryptoCortex,gdax,gdax-sim,gemini-sim,SEEDCX-sim</StreamName>
+        <AdjustmentOptions>
+          <UseSubscriptionOptions>true</UseSubscriptionOptions>
+          <CustomOptions>
+            <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+            <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+            <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+            <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+            <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+            <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+          </CustomOptions>
+        </AdjustmentOptions>
+      </Ticks>
+      <UseTickForIntraday>false</UseTickForIntraday>
+      <InputStreams />
+      <OutputStreams />
+    </ConnectionInfo>
+    <ChartDataType>Tick</ChartDataType>
+    <WarmModeEnabled>false</WarmModeEnabled>
+    <UseAlternativeDataCache>false</UseAlternativeDataCache>
+    <UseVisualizer>false</UseVisualizer>
+    <ConfigurationSymbols>
+      <Symbols>
+        <string>BCHUSD</string>
+        <string>BTCUSD</string>
+        <string>ETCUSD</string>
+        <string>ETHBTC</string>
+        <string>LTCBTC</string>
+        <string>LTCUSD</string>
+        <string>XRPUSD</string>
+      </Symbols>
+      <Symbols2Show />
+      <ShowAllSymbols>true</ShowAllSymbols>
+    </ConfigurationSymbols>
+    <Realtime>false</Realtime>
+    <Range>
+      <Size>30</Size>
+      <UOM>Second</UOM>
+    </Range>
+    <L1QuoteAggregatorOptions>
+      <Enabled>false</Enabled>
+      <UseAllExchanges>true</UseAllExchanges>
+      <Exchanges />
+      <ShowNational>true</ShowNational>
+      <ShowConsolidated>true</ShowConsolidated>
+      <ShowByExchange>false</ShowByExchange>
+      <AllExchanges />
+      <HasNational>false</HasNational>
+    </L1QuoteAggregatorOptions>
+    <ShowPriceChart>true</ShowPriceChart>
+    <ShowOtherCharts>true</ShowOtherCharts>
+    <LayoutType>OneWindow</LayoutType>
+    <ChartWindowsLayout>
+      <DisplayRowsFirst>true</DisplayRowsFirst>
+      <MaxWindowNumber>20</MaxWindowNumber>
+      <GridRowsCount>4</GridRowsCount>
+      <GridColsCount>5</GridColsCount>
+    </ChartWindowsLayout>
+    <ColorThemeName>Light</ColorThemeName>
+  </ChartConfig>
+</CustomViewRunConfig>

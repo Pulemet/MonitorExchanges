@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<CustomViewDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Modified>2019-11-05T15:54:21.9395112+03:00</Modified>
+  <CategoryID>00000000-0000-0000-0000-000000000000</CategoryID>
+  <Name>MonitorExchanges</Name>
+  <ID>48643a9e-be51-4b3c-a7c1-5394be46152d</ID>
+  <AttrList />
+  <Version>3</Version>
+  <State>Valid</State>
+  <ItemType>Strategy</ItemType>
+  <Configuration>
+    <Groups>
+      <Subscriptions>
+        <Name>Subscriptions</Name>
+        <Expanded>true</Expanded>
+        <Subscriptions>
+          <Subscription>
+            <Selected>false</Selected>
+            <ID>331a41ab-7960-423f-8cba-978196ea79bc</ID>
+            <TickDBMessages />
+            <StreamTickDBMessages />
+            <VisibleInBlotter>false</VisibleInBlotter>
+            <BarKind>Price</BarKind>
+            <SubscriptionType>BarData</SubscriptionType>
+            <Stack>1</Stack>
+            <Size>1</Size>
+            <SizeUom>Minute</SizeUom>
+            <StackUom>Bar</StackUom>
+            <IsDaily>false</IsDaily>
+            <IsMain>false</IsMain>
+            <CarryOver>true</CarryOver>
+            <BroadcastOutOfSessionData>false</BroadcastOutOfSessionData>
+            <CreateQuotes>true</CreateQuotes>
+            <SubscribeBBO>true</SubscribeBBO>
+            <SubscribeTrades>true</SubscribeTrades>
+            <UseL2Data>false</UseL2Data>
+            <L2DataDepth>10</L2DataDepth>
+            <UseL1QuoteAggregator>false</UseL1QuoteAggregator>
+            <ForwardRead>false</ForwardRead>
+            <ForwardReadLimit>0</ForwardReadLimit>
+            <AdjustmentOptions>
+              <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+              <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+              <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+              <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+              <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+              <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+            </AdjustmentOptions>
+          </Subscription>
+          <Subscription>
+            <Selected>false</Selected>
+            <ID>2373ecbe-1c15-46a2-b5bb-3c977a4e31d1</ID>
+            <TickDBMessages />
+            <StreamTickDBMessages />
+            <VisibleInBlotter>false</VisibleInBlotter>
+            <BarKind>Price</BarKind>
+            <SubscriptionType>BarData</SubscriptionType>
+            <Stack>250</Stack>
+            <Size>1</Size>
+            <SizeUom>Minute</SizeUom>
+            <StackUom>Bar</StackUom>
+            <IsDaily>true</IsDaily>
+            <IsMain>false</IsMain>
+            <CarryOver>true</CarryOver>
+            <BroadcastOutOfSessionData>false</BroadcastOutOfSessionData>
+            <CreateQuotes>true</CreateQuotes>
+            <SubscribeBBO>true</SubscribeBBO>
+            <SubscribeTrades>true</SubscribeTrades>
+            <UseL2Data>false</UseL2Data>
+            <L2DataDepth>10</L2DataDepth>
+            <UseL1QuoteAggregator>false</UseL1QuoteAggregator>
+            <ForwardRead>false</ForwardRead>
+            <ForwardReadLimit>0</ForwardReadLimit>
+            <AdjustmentOptions>
+              <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+              <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+              <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+              <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+              <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+              <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+            </AdjustmentOptions>
+          </Subscription>
+          <Subscription>
+            <Selected>true</Selected>
+            <ID>5e18e832-d68b-4612-b52a-b93a9b45e083</ID>
+            <TickDBMessages />
+            <StreamTickDBMessages />
+            <VisibleInBlotter>false</VisibleInBlotter>
+            <BarKind>Price</BarKind>
+            <SubscriptionType>TickBarData</SubscriptionType>
+            <Stack>1</Stack>
+            <Size>1</Size>
+            <SizeUom>Minute</SizeUom>
+            <StackUom>Minute</StackUom>
+            <IsDaily>false</IsDaily>
+            <IsMain>true</IsMain>
+            <CarryOver>true</CarryOver>
+            <BroadcastOutOfSessionData>false</BroadcastOutOfSessionData>
+            <CreateQuotes>true</CreateQuotes>
+            <SubscribeBBO>true</SubscribeBBO>
+            <SubscribeTrades>true</SubscribeTrades>
+            <UseL2Data>true</UseL2Data>
+            <L2DataDepth>10</L2DataDepth>
+            <UseL1QuoteAggregator>true</UseL1QuoteAggregator>
+            <ForwardRead>false</ForwardRead>
+            <ForwardReadLimit>0</ForwardReadLimit>
+            <AdjustmentOptions>
+              <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+              <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+              <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+              <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+              <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+              <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+            </AdjustmentOptions>
+          </Subscription>
+          <Subscription>
+            <Selected>false</Selected>
+            <ID>0cd6f38b-730b-48b2-97c6-d56cb94ac15e</ID>
+            <TickDBMessages />
+            <StreamTickDBMessages />
+            <VisibleInBlotter>false</VisibleInBlotter>
+            <BarKind>Price</BarKind>
+            <SubscriptionType>FundamentalData</SubscriptionType>
+            <Stack>1</Stack>
+            <Size>1</Size>
+            <SizeUom>Minute</SizeUom>
+            <StackUom>Minute</StackUom>
+            <IsDaily>false</IsDaily>
+            <IsMain>false</IsMain>
+            <Attributes>
+              <Active>false</Active>
+              <Items />
+            </Attributes>
+            <CustomProperties>
+              <Items />
+            </CustomProperties>
+            <CarryOver>true</CarryOver>
+            <BroadcastOutOfSessionData>false</BroadcastOutOfSessionData>
+            <CreateQuotes>true</CreateQuotes>
+            <SubscribeBBO>true</SubscribeBBO>
+            <SubscribeTrades>true</SubscribeTrades>
+            <UseL2Data>false</UseL2Data>
+            <L2DataDepth>10</L2DataDepth>
+            <UseL1QuoteAggregator>false</UseL1QuoteAggregator>
+            <ForwardRead>false</ForwardRead>
+            <ForwardReadLimit>0</ForwardReadLimit>
+            <AdjustmentOptions>
+              <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+              <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+              <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+              <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+              <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+              <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+            </AdjustmentOptions>
+          </Subscription>
+          <Subscription>
+            <Selected>true</Selected>
+            <ID>21b1b320-10f7-4d4f-b543-4ab8a1e18cd9</ID>
+            <TickDBMessages />
+            <StreamTickDBMessages />
+            <VisibleInBlotter>false</VisibleInBlotter>
+            <BarKind>Price</BarKind>
+            <SubscriptionType>None</SubscriptionType>
+            <Stack>1</Stack>
+            <Size>1</Size>
+            <SizeUom>Minute</SizeUom>
+            <StackUom>Minute</StackUom>
+            <IsDaily>false</IsDaily>
+            <IsMain>false</IsMain>
+            <CarryOver>true</CarryOver>
+            <BroadcastOutOfSessionData>false</BroadcastOutOfSessionData>
+            <CreateQuotes>true</CreateQuotes>
+            <SubscribeBBO>true</SubscribeBBO>
+            <SubscribeTrades>true</SubscribeTrades>
+            <UseL2Data>false</UseL2Data>
+            <L2DataDepth>10</L2DataDepth>
+            <UseL1QuoteAggregator>false</UseL1QuoteAggregator>
+            <ForwardRead>false</ForwardRead>
+            <ForwardReadLimit>0</ForwardReadLimit>
+            <AdjustmentOptions>
+              <SettlementDate>9999-12-31T23:59:59.9999999</SettlementDate>
+              <AdjustCapitalChagesPrice>false</AdjustCapitalChagesPrice>
+              <AdjustCapitalChangesVolume>false</AdjustCapitalChangesVolume>
+              <AdjustCapitalChangesPerShare>false</AdjustCapitalChangesPerShare>
+              <AdjustNormalCashDividendsPrice>false</AdjustNormalCashDividendsPrice>
+              <AdjustSpecialCashDividendsPrice>false</AdjustSpecialCashDividendsPrice>
+            </AdjustmentOptions>
+          </Subscription>
+        </Subscriptions>
+      </Subscriptions>
+      <Properties>
+        <Name>Properties</Name>
+        <Expanded>true</Expanded>
+        <Properties />
+      </Properties>
+      <Symbols>
+        <Name>Instrument and Indices</Name>
+        <Expanded>true</Expanded>
+        <Symbols />
+      </Symbols>
+      <InputParameters>
+        <Name>Input Parameters</Name>
+        <Expanded>true</Expanded>
+        <InputParameters>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>WaitInterval</Name>
+            <ID>3641aa6b-0c22-4a00-90f8-4041c5ce4627</ID>
+            <Question>Time of waiting messages (sec)</Question>
+            <ParamType>int</ParamType>
+            <DefaultValue xsi:type="xsd:string">60</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>SendOrderInterval</Name>
+            <ID>54bad302-2904-4c2c-a7d6-9d3b37d07c2e</ID>
+            <Question>Interval of sending orders (sec)</Question>
+            <ParamType>int</ParamType>
+            <DefaultValue xsi:type="xsd:string">60</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>ChannelUpdateInterval</Name>
+            <ID>a572ab37-12e6-4737-a1ce-ba01abe6c390</ID>
+            <Question>Interval of update channel (sec)</Question>
+            <ParamType>int</ParamType>
+            <DefaultValue xsi:type="xsd:string">20</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>WaitPendingStatus</Name>
+            <ID>ec3587e1-a73e-4a2f-87a9-9748e60fb6c3</ID>
+            <Question>Max delay for `PendingSubmit` and `PendingCancel` order statuses (sec)</Question>
+            <ParamType>int</ParamType>
+            <DefaultValue xsi:type="xsd:string">3</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>ListExchanges</Name>
+            <ID>0db23f5f-7945-4d59-954a-8c5f0f06c7ac</ID>
+            <Question>Exchanges</Question>
+            <ParamType>InputList&lt;ExchangeParameters&gt;</ParamType>
+            <DefaultValue xsi:type="xsd:string">new InputList&lt;ExchangeParameters&gt;()</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>true</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>ListMatchExchanges</Name>
+            <ID>2442d832-ac06-4b9e-89c3-74744fd71e73</ID>
+            <Question>Compare Exchanges</Question>
+            <ParamType>InputList&lt;MatchExchangesParameters&gt;</ParamType>
+            <DefaultValue xsi:type="xsd:string">new InputList&lt;MatchExchangesParameters&gt;()</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>SendMailParameters</Name>
+            <ID>35c52401-e66c-4939-991f-eecd51dda50d</ID>
+            <Question>Send E-Mail Parameters</Question>
+            <ParamType>MailSenderParameters</ParamType>
+            <DefaultValue xsi:type="xsd:string">new MailSenderParameters()</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>emsParameters</Name>
+            <ID>852a26f5-37dc-439f-937a-2d0e4c14ceef</ID>
+            <Question>EMS Parameters</Question>
+            <ParamType>Deltix.EMS.Coordinator.EMSParameters</ParamType>
+            <DefaultValue xsi:type="xsd:string">CreateEMSParameters()</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>false</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+          <InputParameter>
+            <Selected>true</Selected>
+            <Name>IsEnabledLog</Name>
+            <ID>f8a59306-a3dc-48c7-a9c0-0e1aceb8b190</ID>
+            <Question>Enable logs?</Question>
+            <ParamType>bool</ParamType>
+            <DefaultValue xsi:type="xsd:string">false</DefaultValue>
+            <Group />
+            <IsEditableInRuntime>true</IsEditableInRuntime>
+            <Modifiers>Public</Modifiers>
+            <IsRuntimeMultiValue>false</IsRuntimeMultiValue>
+            <IsPortfolioLevel>true</IsPortfolioLevel>
+            <ShowInReport>true</ShowInReport>
+            <IsReadOnly>false</IsReadOnly>
+          </InputParameter>
+        </InputParameters>
+      </InputParameters>
+      <VariablesGroup>
+        <Name>Variables and Indicators</Name>
+        <Expanded>true</Expanded>
+        <Variables />
+      </VariablesGroup>
+      <BuildingBlocks>
+        <Name>Building Blocks</Name>
+        <Expanded>true</Expanded>
+        <Functions />
+      </BuildingBlocks>
+      <Events>
+        <Name>Events</Name>
+        <Expanded>true</Expanded>
+        <Events />
+      </Events>
+      <Scales>
+        <Name>Scales</Name>
+        <Expanded>true</Expanded>
+        <Scales />
+        <Baskets />
+      </Scales>
+      <MarketGrids>
+        <Name>Market Grids</Name>
+        <Expanded>true</Expanded>
+        <MarketGrids />
+      </MarketGrids>
+      <Reports>
+        <Name>Reports</Name>
+        <Expanded>true</Expanded>
+        <Reports />
+      </Reports>
+      <Advanced>
+        <Name>Default Values</Name>
+        <Expanded>true</Expanded>
+        <SymbolListDef>
+          <Selected>false</Selected>
+          <Name>Symbol List</Name>
+          <ID>086bb4f7-2b9d-4537-a5e8-231a51890eba</ID>
+          <Path />
+        </SymbolListDef>
+        <RunParametersDef>
+          <Selected>false</Selected>
+          <Name>Run Parameters</Name>
+          <ID>fcff56df-82ff-4dab-a46b-c2597da196a9</ID>
+        </RunParametersDef>
+      </Advanced>
+      <Libraries>
+        <Name>Libraries</Name>
+        <Expanded>true</Expanded>
+        <Libraries>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>57b0e7c2-f979-4ef8-b714-732cf27c69f6</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\FinAnalysis.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>0bd074f7-3ac2-4b81-91c1-1e367b256168</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>netstandard.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>59684954-616d-4e4d-9daa-c2f30242cfea</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\QuantOffice.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>a121d4d0-d1e5-4e8c-92c4-c98d719ae1f0</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\QuantOfficeLibrary.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>a5c775d0-725f-49e8-8b6f-016a4e5ba9aa</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\IdxEditor.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>8a82c928-fd16-4355-98d9-52aea18ff718</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\FinAnalysis.Base.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>a26f4deb-74fa-441c-9ae5-e8fb88a2c891</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.Timebase.Api.Messages.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>94258ea2-2871-4fb8-ae43-ba00326dc87f</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Timebase.Api.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>52dd7b99-c3b9-45be-8c67-779f68ca8224</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Timebase.Client.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>085a3a93-8d26-49da-85f7-e4e406eed82e</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\UhfConnector.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>760f0ff5-bb43-4af3-bd8b-ae99c969bd75</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\OrderExecutor.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>62c29e5c-d2a9-4379-84dd-1ed2935b4d22</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\StrategyServer.Api.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>ca15ff24-4497-4009-9f5f-a1155d0ec9b1</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.StrategyServer.Api.Messages.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>94515db4-3089-4295-8da3-5af023a2b72a</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\RTMath.Containers.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>2b8e3da7-ad9d-4b36-a437-ffc96f21f421</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.DFP.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>030b438c-f55a-43ae-b36a-7b4872004d26</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\QuantOffice.Data.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>d8eaa0c5-0a04-4bda-a9b5-f1f4ac3b2651</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\System.Memory.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>7628835a-63b6-48f4-8c6d-345dac57b97b</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>7628835a-63b6-48f4-8c6d-345dac57b97b</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System.Drawing</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>ee67421e-21bc-476d-9de0-f2420ac1f864</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System.Windows.Forms</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>7628835a-63b6-48f4-8c6d-345dac57b97b</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System.XML</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>7628835a-63b6-48f4-8c6d-345dac57b97b</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System.Core</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>15c86ae2-4019-49b5-8283-ba4dd160849d</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>System.Xml.Linq</HintPath>
+          </Library>
+        </Libraries>
+      </Libraries>
+      <OutputStreams>
+        <Name>Output Streams</Name>
+        <Expanded>true</Expanded>
+        <OutputStreams />
+      </OutputStreams>
+    </Groups>
+  </Configuration>
+  <CodeGeneratorVersion>89</CodeGeneratorVersion>
+  <CheckExtendedSecurityMetaInfo>true</CheckExtendedSecurityMetaInfo>
+  <Attachments />
+  <IsSystemModule>false</IsSystemModule>
+</CustomViewDef>
