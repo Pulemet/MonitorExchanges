@@ -279,8 +279,8 @@
           </InputParameter>
           <InputParameter>
             <Selected>true</Selected>
-            <Name>ListMatchExchanges</Name>
-            <ID>2442d832-ac06-4b9e-89c3-74744fd71e73</ID>
+            <Name>ParametersMatchExchanges</Name>
+            <ID>fd77e8b2-9379-4cc5-bc71-47d2b25aad3e</ID>
             <Question>Compare Exchanges</Question>
             <ParamType>InputList&lt;MatchExchangesParameters&gt;</ParamType>
             <DefaultValue xsi:type="xsd:string">new InputList&lt;MatchExchangesParameters&gt;()</DefaultValue>
@@ -382,13 +382,37 @@
         <RunParametersDef>
           <Selected>false</Selected>
           <Name>Run Parameters</Name>
-          <ID>fcff56df-82ff-4dab-a46b-c2597da196a9</ID>
+          <ID>7148da75-546b-4c3c-9ec8-14288c16990c</ID>
         </RunParametersDef>
       </Advanced>
       <Libraries>
         <Name>Libraries</Name>
         <Expanded>true</Expanded>
         <Libraries>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>2b8e3da7-ad9d-4b36-a437-ffc96f21f421</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.DFP.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>ca15ff24-4497-4009-9f5f-a1155d0ec9b1</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.StrategyServer.Api.Messages.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>a26f4deb-74fa-441c-9ae5-e8fb88a2c891</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Deltix.Timebase.Api.Messages.dll</HintPath>
+          </Library>
           <Library>
             <Selected>true</Selected>
             <IconPath>../icons/app/block.ico</IconPath>
@@ -408,10 +432,26 @@
           <Library>
             <Selected>true</Selected>
             <IconPath>../icons/app/block.ico</IconPath>
+            <ID>760f0ff5-bb43-4af3-bd8b-ae99c969bd75</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\OrderExecutor.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
             <ID>59684954-616d-4e4d-9daa-c2f30242cfea</ID>
             <LibID>00000000-0000-0000-0000-000000000000</LibID>
             <Usings />
             <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\QuantOffice.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>030b438c-f55a-43ae-b36a-7b4872004d26</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\QuantOffice.Data.dll</HintPath>
           </Library>
           <Library>
             <Selected>true</Selected>
@@ -448,6 +488,38 @@
           <Library>
             <Selected>true</Selected>
             <IconPath>../icons/app/block.ico</IconPath>
+            <ID>94515db4-3089-4295-8da3-5af023a2b72a</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\RTMath.Containers.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>62c29e5c-d2a9-4379-84dd-1ed2935b4d22</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\StrategyServer.Api.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>d8eaa0c5-0a04-4bda-a9b5-f1f4ac3b2651</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\System.Memory.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>94258ea2-2871-4fb8-ae43-ba00326dc87f</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Timebase.Api.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
             <ID>94258ea2-2871-4fb8-ae43-ba00326dc87f</ID>
             <LibID>00000000-0000-0000-0000-000000000000</LibID>
             <Usings />
@@ -460,6 +532,22 @@
             <LibID>00000000-0000-0000-0000-000000000000</LibID>
             <Usings />
             <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Timebase.Client.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>52dd7b99-c3b9-45be-8c67-779f68ca8224</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\Timebase.Client.dll</HintPath>
+          </Library>
+          <Library>
+            <Selected>true</Selected>
+            <IconPath>../icons/app/block.ico</IconPath>
+            <ID>085a3a93-8d26-49da-85f7-e4e406eed82e</ID>
+            <LibID>00000000-0000-0000-0000-000000000000</LibID>
+            <Usings />
+            <HintPath>D:\Program Files\5.3.0\QuantOffice\Bin\UhfConnector.dll</HintPath>
           </Library>
           <Library>
             <Selected>true</Selected>

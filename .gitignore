@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/bin/Release
+/obj
+/MonitorExchanges.csproj.user
+/MonitorExchanges.bak

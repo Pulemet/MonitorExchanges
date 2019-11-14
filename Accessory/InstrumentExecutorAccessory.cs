@@ -110,11 +110,11 @@ public sealed partial class InstrumentExecutor : InstrumentExecutorBase
 			return PortfolioExecutor.ListExchanges;
 		}
 	}
-	public InputList<MatchExchangesParameters> ListMatchExchanges
+	public InputList<MatchExchangesParameters> ParametersMatchExchanges
 	{
 		get
 		{
-			return PortfolioExecutor.ListMatchExchanges;
+			return PortfolioExecutor.ParametersMatchExchanges;
 		}
 	}
 	public MailSenderParameters SendMailParameters

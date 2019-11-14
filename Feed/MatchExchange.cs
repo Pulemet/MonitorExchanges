@@ -33,7 +33,7 @@ public class MatchExchange
     public MatchExchange(MatchExchangesParameters parameters, PortfolioExecutor portfolioExecutor)
     {
         Exchange = parameters.FirstExchange;
-        Symbol = parameters.Symbol;
+        Symbol = parameters.Symbols;
         TimePeriod = parameters.TimePeriod;
         Threshold = parameters.Threshold;
         PortfolioExecutor = portfolioExecutor;

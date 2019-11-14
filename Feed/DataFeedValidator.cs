@@ -73,8 +73,8 @@ public sealed class MatchExchangesParameters : Parameters<MatchExchangesParamete
     public string SecondExchange;
 
     //[EditableInRuntime]
-    [DisplayInfo(DisplayName = "Symbol")]
-    public string Symbol;
+    [DisplayInfo(DisplayName = "Symbols")]
+    public string Symbols;
 
     //[EditableInRuntime]
     [DisplayInfo(DisplayName = "Time Period for SMA (secs)")]
@@ -92,7 +92,7 @@ public sealed class MatchExchangesParameters : Parameters<MatchExchangesParamete
     {
         FirstExchange = firstExchange;
         SecondExchange = secondExchange;
-        Symbol = symbol;
+        Symbols = symbol;
         TimePeriod = timePeriod;
         Threshold = threshold;
     }
@@ -101,7 +101,7 @@ public sealed class MatchExchangesParameters : Parameters<MatchExchangesParamete
     {
         FirstExchange = "";
         SecondExchange = "";
-        Symbol = "";
+        Symbols = "";
         TimePeriod = 10;
         Threshold = 0.0003;
     }
@@ -115,7 +115,7 @@ public sealed class MatchExchangesParameters : Parameters<MatchExchangesParamete
 
         FirstExchange = source.FirstExchange;
         SecondExchange = source.SecondExchange;
-        Symbol = source.Symbol;
+        Symbols = source.Symbols;
         TimePeriod = source.TimePeriod;
         Threshold = source.Threshold;
     }
@@ -124,7 +124,7 @@ public sealed class MatchExchangesParameters : Parameters<MatchExchangesParamete
     {
         return String.Format(
             "First Exchange: {0}; Second Exchange: {1}, Symbol: {2}", FirstExchange,
-            SecondExchange, Symbol);
+            SecondExchange, Symbols);
     }
 
     #endregion

@@ -43,16 +43,41 @@
     <StartArguments>"$(MSBuildProjectDirectory)\bin\Release\MonitorExchanges.dll"</StartArguments>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Deltix.DFP">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\Deltix.DFP.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Deltix.StrategyServer.Api.Messages">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\Deltix.StrategyServer.Api.Messages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Deltix.Timebase.Api.Messages">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\Deltix.Timebase.Api.Messages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="FinAnalysis, Version=2.1.7.0, Culture=neutral, PublicKeyToken=d8b0b03b74f552b8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(QuantOfficeBinPath)\FinAnalysis.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard.dll" />
+    <Reference Include="OrderExecutor">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\OrderExecutor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="QuantOffice, Version=5.2.0.157, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(QuantOfficeBinPath)\QuantOffice.dll</HintPath>
       <Private>false</Private>
+    </Reference>
+    <Reference Include="QuantOffice.Data">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\QuantOffice.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="QuantOfficeLibrary, Version=5.2.0.157, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
@@ -74,15 +99,45 @@
       <HintPath>$(QuantOfficeBinPath)\Deltix.Timebase.Api.Messages.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="RTMath.Containers">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\RTMath.Containers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StrategyServer.Api">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\StrategyServer.Api.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Timebase.Api">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\Timebase.Api.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Timebase.Api, Version=5.2.28.0, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(QuantOfficeBinPath)\Timebase.Api.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="Timebase.Client">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\Timebase.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Timebase.Client, Version=5.2.28.0, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(QuantOfficeBinPath)\Timebase.Client.dll</HintPath>
       <Private>false</Private>
+    </Reference>
+    <Reference Include="UhfConnector">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(QuantOfficeBinPath)\UhfConnector.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UhfConnector, Version=5.2.0.157, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>

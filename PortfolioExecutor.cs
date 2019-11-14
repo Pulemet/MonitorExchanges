@@ -91,6 +91,10 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
     private StrategyTimer ChannelTimer;
     public DataFeedValidator DataFeedValidator;
 
+    // This list is created with triples of parameters (Exchange_1, Exchange_2, Instrument) necessary for match,
+    // because the main list of input parameters (ParametersMatchExchanges) contains a list of Instruments for each pair of exchanges
+    public InputList<MatchExchangesParameters> ListMatchExchanges;
+
     #endregion
 
     #region BuildingBlocks
@@ -132,20 +136,20 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
         {
             ListMatchExchanges.Remove(removedExchange);
             SendLog(String.Format("Remove match exchanges {0}-{1} on {2} symbol because monitoring exchanges do not contain them",
-                removedExchange.FirstExchange, removedExchange.SecondExchange, removedExchange.Symbol));
+                removedExchange.FirstExchange, removedExchange.SecondExchange, removedExchange.Symbols));
         }
 
         // check unknown Symbols for ListMatchExchanges
         foreach (var matchExchange in ListMatchExchanges)
         {
             var exchangesForAddingSymbol = (inputParameters == null ? ListExchanges : inputParameters.ListExchanges).Where(e => e.Name == matchExchange.FirstExchange || e.Name == matchExchange.SecondExchange).
-                Where(e => !Utils.GetListFromLine(e.Symbols).Contains(matchExchange.Symbol)).ToList();
+                Where(e => !Utils.GetListFromLine(e.Symbols).Contains(matchExchange.Symbols)).ToList();
 
             foreach (var exchangeForAddingSymbol in exchangesForAddingSymbol)
             {
-                exchangeForAddingSymbol.Symbols += (exchangeForAddingSymbol.Symbols == "" ? "" : ", ") + matchExchange.Symbol; 
+                exchangeForAddingSymbol.Symbols += (exchangeForAddingSymbol.Symbols == "" ? "" : ", ") + matchExchange.Symbols; 
                 SendLog(String.Format("Added {0} symbol for {1} exchange because this symbol is needed for matching",
-                        matchExchange.Symbol, exchangeForAddingSymbol.Name));
+                        matchExchange.Symbols, exchangeForAddingSymbol.Name));
             }
         }
     }
@@ -181,17 +185,17 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
         {
             if (activateExñhanges.Contains(matchExchange.FirstExchange) &&
                 activateExñhanges.Contains(matchExchange.SecondExchange) &&
-                DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbol, true) == null)
+                DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbols, true) == null)
             {
                 DataFeedValidator.AddMatchExchange(matchExchange);
                 SendLog(String.Format("Activate match exchanges {0}-{1} on {2} symbol because monitoring on exchange activated",
-                    matchExchange.FirstExchange, matchExchange.SecondExchange, matchExchange.Symbol));
+                    matchExchange.FirstExchange, matchExchange.SecondExchange, matchExchange.Symbols));
             } else if (deactivateExñhanges.Contains(matchExchange.FirstExchange) ||
                        deactivateExñhanges.Contains(matchExchange.SecondExchange))
             {
-                DataFeedValidator.RemoveMatchExchange(DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbol, true));
+                DataFeedValidator.RemoveMatchExchange(DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbols, true));
                 SendLog(String.Format("Deactivate match exchanges {0}-{1} on {2} symbol because monitoring on exchange deactivated",
-                    matchExchange.FirstExchange, matchExchange.SecondExchange, matchExchange.Symbol));
+                    matchExchange.FirstExchange, matchExchange.SecondExchange, matchExchange.Symbols));
             }
         }
     }
@@ -286,6 +290,18 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
 
         SendLog("Initialize parameters");
 
+        // Initialize triples for matching
+        ListMatchExchanges = new InputList<MatchExchangesParameters>();
+        foreach (var matchExchange in ParametersMatchExchanges)
+        {
+            var listSymbols = Utils.GetListFromLine(matchExchange.Symbols);
+            foreach (var symbol in listSymbols)
+            {
+                ListMatchExchanges.Add(new MatchExchangesParameters(matchExchange.FirstExchange, matchExchange.SecondExchange,
+                    symbol, matchExchange.TimePeriod, matchExchange.Threshold));
+            }
+        }
+
         SynchronizeInputParameters(null);
         DataFeedValidator = new DataFeedValidator(this);
 
@@ -350,7 +366,7 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
 
     //[EditableInRuntime]
     [DisplayInfo(DisplayName = "Compare Exchanges")]
-    public InputList<MatchExchangesParameters> ListMatchExchanges = new InputList<MatchExchangesParameters>();
+    public InputList<MatchExchangesParameters> ParametersMatchExchanges = new InputList<MatchExchangesParameters>();
 
     [DisplayInfo(DisplayName = "Send E-Mail Parameters")]
     public MailSenderParameters SendMailParameters = new MailSenderParameters();
