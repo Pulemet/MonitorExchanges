@@ -185,7 +185,7 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
         {
             if (activateExñhanges.Contains(matchExchange.FirstExchange) &&
                 activateExñhanges.Contains(matchExchange.SecondExchange) &&
-                DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbols, true) == null)
+                DataFeedValidator.FindExchange(matchExchange) == null)
             {
                 DataFeedValidator.AddMatchExchange(matchExchange);
                 SendLog(String.Format("Activate match exchanges {0}-{1} on {2} symbol because monitoring on exchange activated",
@@ -193,7 +193,7 @@ public partial class PortfolioExecutor : PortfolioExecutorBase
             } else if (deactivateExñhanges.Contains(matchExchange.FirstExchange) ||
                        deactivateExñhanges.Contains(matchExchange.SecondExchange))
             {
-                DataFeedValidator.RemoveMatchExchange(DataFeedValidator.FindExchange(matchExchange.FirstExchange, matchExchange.Symbols, true));
+                DataFeedValidator.RemoveMatchExchange(DataFeedValidator.FindExchange(matchExchange));
                 SendLog(String.Format("Deactivate match exchanges {0}-{1} on {2} symbol because monitoring on exchange deactivated",
                     matchExchange.FirstExchange, matchExchange.SecondExchange, matchExchange.Symbols));
             }

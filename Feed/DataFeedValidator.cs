@@ -21,27 +21,23 @@ public class DataFeedValidator
         }
     }
 
-    public void UpdatePrices(double price, string exchange, string symbol)
+    public void UpdateIndicators(double price, string exchange, string symbol)
     {
         foreach (var matchExchange in ListMatchExchanges)
         {
             if (matchExchange.Symbol == symbol)
             {
-                FindExchange(exchange, symbol, false)?.UpdatePrice(price);
+                matchExchange.GetExchange(exchange)?.UpdatePrice(price);
             }
         }
     }
 
-    public MatchExchange FindExchange(string exchange, string symbol, bool isReturnMain)
+    public MatchExchange FindExchange(MatchExchangesParameters matchExchangeParameters)
     {
         foreach (var matchExchange in ListMatchExchanges)
         {
-            if (matchExchange.Symbol == symbol)
-            {
-                var foundExchange = matchExchange.GetExchange(exchange);
-                if (foundExchange != null)
-                    return isReturnMain ? matchExchange : foundExchange;
-            }
+            if (matchExchange.IsEqual(matchExchangeParameters))
+                return matchExchange;
         }
 
         return null;

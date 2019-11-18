@@ -107,7 +107,7 @@ public class MonitoringExchange
         Running = false;
     }
 
-    public void UpdateStatus(DateTime newTime, string symbol, double bestBid, double bestAsk)
+    public void UpdateStatus(DateTime newTime, string symbol, double bestBid, double bestAsk, ref double midPrice)
     {
         if (IsDeactivated)
         {
@@ -134,7 +134,7 @@ public class MonitoringExchange
             PortfolioExecutor.SendMessage(title, textMessage, logMessage);
         }
 
-        ExchangeSymbols[symbol].UpdateStatus(newTime, bestBid, bestAsk);
+        ExchangeSymbols[symbol].UpdateStatus(newTime, bestBid, bestAsk, ref midPrice);
     }
 
     public void RemoveSymbolsForOrders(string symbol, SentOrderStatus status)

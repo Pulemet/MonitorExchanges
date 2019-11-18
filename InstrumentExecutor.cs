@@ -89,22 +89,9 @@ public partial class InstrumentExecutor : InstrumentExecutorBase
 
     public Dictionary<string, MonitoringExchange> workExchangesOrders;
 
-    
-    //public DateTime LastSpreadErrorMessageTime = DateTime.MinValue;
-
     #endregion
 
     #region BuildingBlocks
-
-    private double CalculateMidPrice(double bid, double ask)
-    {
-        if (!Double.IsInfinity(bid) && !Double.IsInfinity(ask))
-        {
-            return (bid + ask) / 2;
-        }
-
-        return 0;
-    }
 
     private void ChangeSide()
     {
@@ -164,8 +151,10 @@ public partial class InstrumentExecutor : InstrumentExecutorBase
         var exchangeId = ((IExchangeOrderBook)orderBook).ExchangeId;
         string exchange = ExchangeCodec.LongToCode(exchangeId);
         var monitor = FindMonitor(exchange);
-        monitor.UpdateStatus(DateTime.Now, Symbol, orderBook.BestBid(), orderBook.BestAsk());
-        PortfolioExecutor.DataFeedValidator.UpdatePrices(CalculateMidPrice(orderBook.BestBid(), orderBook.BestAsk()), exchange, Symbol);
+        double midPrice = 0;
+        monitor.UpdateStatus(DateTime.Now, Symbol, orderBook.BestBid(), orderBook.BestAsk(), ref midPrice);
+        if (Math.Abs(midPrice) > Utils.Delta)
+            PortfolioExecutor.DataFeedValidator.UpdateIndicators(midPrice, exchange, Symbol);
     }
 
     internal void OnUpdateInputParameters(EditableInstrumentInputParameters inputParameters)

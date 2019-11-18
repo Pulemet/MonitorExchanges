@@ -113,7 +113,7 @@ public class ExchangeSymbol
         }
     }
 
-    public void UpdateStatus(DateTime newTime, double bestBid, double bestAsk)
+    public void UpdateStatus(DateTime newTime, double bestBid, double bestAsk, ref double midPrice)
     {
         if (LastMessageTime != DateTime.MinValue &&
             (DateTime.Now - LastMessageTime).TotalSeconds > _portfolioExecutor.WaitInterval &&
@@ -130,7 +130,7 @@ public class ExchangeSymbol
 
         LastMessageTime = newTime;
         ActivateNotifications(false);
-        CheckCrossBidAsk(bestBid, bestAsk);
+        CheckCrossBidAsk(bestBid, bestAsk, ref midPrice);
     }
 
     public void StartSendingOrders()
@@ -246,10 +246,11 @@ public class ExchangeSymbol
 
     #region Order Book (validation check)
 
-    public bool CheckEmptySide(double bid, double ask)
+    public bool CheckEmptySide(double bid, double ask, ref double midPrice)
     {
         if (Double.IsInfinity(bid) ^ Double.IsInfinity(ask))
         {
+            midPrice = Double.IsInfinity(bid) ? ask : bid;
             if (_exchange.ExchangeParameters.IsAllowOneSide)
             {
                 return false;
@@ -303,6 +304,7 @@ public class ExchangeSymbol
             _portfolioExecutor.SendMessage(title, textMessage, logMessage);
 
             SpreadInfo.UpdateStatus(SpreadStatus.NORMAL);
+            midPrice = CalculateMidPrice(bid, ask);
             return true;
         }
         else if (SpreadInfo.Status == SpreadStatus.NORMAL)
@@ -310,12 +312,18 @@ public class ExchangeSymbol
             SpreadInfo.DetectedEmptySideTime = DateTime.MinValue;
         }
 
+        midPrice = CalculateMidPrice(bid, ask);
         return true;
     }
 
-    private void CheckCrossBidAsk(double bestBid, double bestAsk)
+    private double CalculateMidPrice(double bid, double ask)
     {
-        if (!CheckEmptySide(bestBid, bestAsk))
+        return (bid + ask) / 2;
+    }
+
+    private void CheckCrossBidAsk(double bestBid, double bestAsk, ref double midPrice)
+    {
+        if (!CheckEmptySide(bestBid, bestAsk, ref midPrice))
             return;
 
         if (!SpreadInfo.SendMail && bestBid < bestAsk && SpreadInfo.Status == SpreadStatus.CROSS)
